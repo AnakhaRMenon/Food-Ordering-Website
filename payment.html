@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>PAYMENT</title>
+
+        <style>
+            
+            body{
+                background: url('http://www.latoro.com/wallpapers/food/19661-desktop-wallpapers-delicious-food.jpg');
+                background-size: cover;
+            }
+            input[type=text ]{
+                        width: 150%;
+                        height: 40px;
+                        border-radius: 5px;
+                        border:1px solid black;
+
+                        }
+            .container{
+                        position:center;
+                        border-radius: 30px;
+                        color:rgb(255, 255, 255);
+                        background-color: #000000d7;
+                        
+                        }
+
+            label{
+                font-size: large;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function validate()
+            {
+            if(document.form1.box1.value=="")
+            {
+            alert("please enter your name");
+            }
+            if(document.form1.box2.value=="")
+            {
+            alert("please enter your address");
+            }
+            if(document.form1.number.value=="")
+            {
+            alert("please enter your phone number");
+            }
+            if(form1.age[0].checked==false && form1.age[1].checked==false)
+            {
+            alert("Mention your payment mode");
+            }
+            }
+        </script>
+        <div >
+        <form name="form1" >
+            <center><div style=" font-family: algerian; font-size: 210%; color: rgb(0, 0, 0); background-color:#000000d7;">
+                <h1 style="font-family: algerian; font-size: 220%; color:rgb(255, 255, 255)">PLACE ORDER</h1>
+            </div></center>
+            <center>
+             <table  style="font-size : 100%;" cellspacing ="25" cellpadding="2" class="container">
+
+                    <tr>
+                        <td><label for ="name"><b> NAME :</b> </label>
+                            <br>
+                        <input type="text"  placeholder="enter your name" name="box1"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for ="address"><b> ADDRESS :</b> </label>
+                            <br>
+                        <input type="text"  placeholder="enter your address" name="box2"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for ="email"><b> EMAIL-ID (optional) : </b></label>
+                            <br>
+                        <input type="text"  name="email" placeholder="enter email id" ></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for ="email"><b> PHONE NUMBER : </b></label>
+                            <br>
+                        <input type="text"  name="number" placeholder="enter phone number" ></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><label for ="Age"><b> PAYMENT MODE : </b></label></td>
+
+                        <td><input  type="radio" id="age1" name="age" value="30" >
+
+                        <label for="age1"><b>ONLINE PAYMENT (UPI)</b></label>
+                        <br>
+                        <input  type="radio" id="age2" name="age" value="60">
+                        <label for="age2"><b>CASH ON DELIVERY</b></label></td>
+                    </tr>
+
+                    <tr><td>
+                    <input style ="font-size: 120%; border-radius: 60px; background-color: chartreuse;" type="button" value="PLACE ORDER" onclick="validate()">
+                    </td> </tr>
+
+                </table>
+                
+            </center>
+      
+        </form>
+        </div>
+    </body>
+</html>

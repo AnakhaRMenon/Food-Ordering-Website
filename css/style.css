@@ -1,0 +1,18 @@
+.st1{
+    font-family: algerian;
+    font-size: 210%;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right , rgb(39, 40, 41) , rgb(106, 110, 110) , rgb(39, 40, 41));
+}
+
+.st2{
+    
+    width: 80%;
+    height: 10%;
+    font-size: x-large;
+}
+.links:hover{
+    background-color: rgb(28, 28, 29);
+    transform: scale(115%);
+    border-color: rgb(13, 13, 14);
+}
